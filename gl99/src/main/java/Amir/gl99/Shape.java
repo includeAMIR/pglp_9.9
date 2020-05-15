@@ -9,5 +9,5 @@ public abstract class Shape {
 		return this.nom;
 	}
 	public abstract void afficher();
-	public abstract void move();
+	public abstract void move(int deriveX, int deriveY);
 }

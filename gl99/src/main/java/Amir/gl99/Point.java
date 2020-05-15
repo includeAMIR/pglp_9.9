@@ -18,4 +18,7 @@ public class Point {
 	public void SetPointY(int y) {
 		this.y = y;
 	}
+	public String printPoint() {
+		return"("+this.x+","+this.y+")";
+	}
 }
