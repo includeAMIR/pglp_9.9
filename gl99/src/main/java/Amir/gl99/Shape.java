@@ -10,4 +10,5 @@ public abstract class Shape {
 	}
 	public abstract void afficher();
 	public abstract void move(int deriveX, int deriveY);
+
 }
