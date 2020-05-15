@@ -17,11 +17,17 @@ public class ShapeComposite extends Shape {
 	@Override
 	public void afficher() {
 		// TODO Auto-generated method stub
-		
+		for(Shape s : shapes) {
+			s.afficher();
+		}
 	}
 	@Override
 	public void move(int deriveX, int deriveY) {
-		// TODO Auto-generated method stub
-		
+		for(Shape s : shapes) {
+			s.move(deriveX, deriveY);
+		}
+	}
+	public ArrayList<Shape> getShapes() {
+		return this.shapes;
 	}
 }

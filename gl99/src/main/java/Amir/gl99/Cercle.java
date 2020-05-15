@@ -13,7 +13,7 @@ public class Cercle extends Shape {
 	@Override
 	public void afficher() {
 		// TODO Auto-generated method stub
-		System.out.println("Cercle(centre = "+centre+","+"rayon = "+ rayon+")");
+		System.out.println("( Cercle(centre = "+this.centre.printPoint()+","+"rayon = "+ rayon+")");
 	}
 
 	@Override
