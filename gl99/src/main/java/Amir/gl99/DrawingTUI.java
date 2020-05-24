@@ -22,7 +22,6 @@ public class DrawingTUI {
 		commande = commande.replaceAll("\\s+","-");
 		commande = commande.replace("\n", "-");
 		reg = commande.split("-");
-		if(reg[0] != "") {
 			if(reg[0] == "exit") {
 				c = new CommandeExit();
 				c.execute();
@@ -67,8 +66,6 @@ public class DrawingTUI {
 			else {
 				System.out.println("Operation non reconnnu");
 			}
-		}
-
 		return c;
 	}
 	
