@@ -23,10 +23,11 @@ public class App
     	shapes.AddShape(r1);
     	shapes.AddShape(r2);
     	shapes.AddShape(c);
-    	shapes.afficher();
-    	shapes.move(2, 2);
-    	System.out.println("Post move");
-    	shapes.afficher();
+    	//shapes.afficher();
+    	DrawingTUI dt = new DrawingTUI();
+    	dt.setShapes(shapes.getShapes());
+    	dt.nextCommand("Afficher");
+    	
 
     }
 }

@@ -47,5 +47,10 @@ public class Rectangle extends Shape{
 	public void setCoterhorizentale(int coterhorizentale) {
 		this.coterhorizentale = coterhorizentale;
 	}
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Rectangle";
+	}
 
 }

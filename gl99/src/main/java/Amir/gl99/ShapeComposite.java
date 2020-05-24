@@ -30,4 +30,9 @@ public class ShapeComposite extends Shape {
 	public ArrayList<Shape> getShapes() {
 		return this.shapes;
 	}
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "ShapeComposite";
+	}
 }

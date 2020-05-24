@@ -29,4 +29,10 @@ public class Cercle extends Shape {
 		return this.rayon;
 	}
 
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Cercle";
+	}
+
 }

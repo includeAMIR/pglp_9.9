@@ -71,4 +71,10 @@ public class Triangle extends Shape{
 		this.p3 = p3;
 	}
 
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Triangle";
+	}
+
 }

@@ -51,4 +51,10 @@ public class Carre extends Shape {
 		this.p = p;
 	}
 
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return "Carre";
+	}
+
 }
