@@ -15,8 +15,13 @@ public class DrawingTUI {
 		Commande c = null;
 		String[] reg =null;
 		Shape s = null;
-		commande = commande.replaceAll(" = ( , ) ","tosplit");
-		reg = commande.split("tosplit");
+		commande = commande.replace("(", "-");
+		commande = commande.replace(")", "-");
+		commande = commande.replace("=", "-");
+		commande = commande.replace(",", "-");
+		commande = commande.replaceAll("\\s+","-");
+		commande = commande.replace("\n", "-");
+		reg = commande.split("-");
 		if(reg[0] != "") {
 			if(reg[0] == "exit") {
 				c = new CommandeExit();
@@ -48,15 +53,15 @@ public class DrawingTUI {
 			else if(reg[0] == "move") {
 				s = getShape(reg[1]);
 				if(s.getType() == "triangle") {
-					CommandeMoveTriangle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]));
+					CommandeMoveTriangle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]), s);
 				}else if(s.getType() == "ShapeComposite"){
-					CommandeMoveShapeComposite(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]));
+					CommandeMoveShapeComposite(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]), s);
 				}else if(s.getType() == "Carre"){
-					CommandeMoveCarre(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]));
+					CommandeMoveCarre(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]), s);
 				}else if(s.getType()=="Rectangle") {
-					CommandeMoveRectangle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]));
+					CommandeMoveRectangle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]), s);
 				}else if(s.getType()=="Cercle") {
-					CommandeMoveCercle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]));
+					CommandeMoveCercle(Integer.parseInt(reg[2]), Integer.parseInt(reg[3]), s);
 				}
 			}
 			else {
@@ -68,25 +73,30 @@ public class DrawingTUI {
 	}
 	
 
-	private void CommandeMoveCercle(int dx, int dy) {
+	private void CommandeMoveCercle(int dx, int dy, Shape s) {
 		// TODO Auto-generated method stub
-		
+		CommandeMoveCercle cmc = new CommandeMoveCercle(dx,dy,(Cercle)s);
+		cmc.execute();
 	}
-	private void CommandeMoveRectangle(int dx, int dy) {
+	private void CommandeMoveRectangle(int dx, int dy, Shape s) {
 		// TODO Auto-generated method stub
-		
+		CommandeMoveRectangle cmr = new CommandeMoveRectangle(dx,dy,(Rectangle)s);
+		cmr.execute();
 	}
-	private void CommandeMoveCarre(int dx, int dy) {
+	private void CommandeMoveCarre(int dx, int dy, Shape s) {
 		// TODO Auto-generated method stub
-		
+		CommandeMoveCarre cmc = new CommandeMoveCarre(dx,dy,(Carre)s);
+		cmc.execute();
 	}
-	private void CommandeMoveTriangle(int dx, int dy) {
+	private void CommandeMoveTriangle(int dx, int dy, Shape s) {
 		// TODO Auto-generated method stub
-		
+		CommandeMoveTriangle cmt = new CommandeMoveTriangle(dx,dy,(Triangle)s);
+		cmt.execute();
 	}
-	private void CommandeMoveShapeComposite(int dx, int dy) {
+	private void CommandeMoveShapeComposite(int dx, int dy, Shape s) {
 		// TODO Auto-generated method stub
-		
+		CommandeMoveShapeComposite cmsc = new CommandeMoveShapeComposite(dx,dy,(ShapeComposite)s);
+		cmsc.execute();
 	}
 	public Commande CommandeShapeComposite(String nom) {
 		// TODO Auto-generated method stub
@@ -152,7 +162,7 @@ public class DrawingTUI {
 	}
 	public Shape getShape(String userinput) {
         for(Shape s: shapes) {
-            if(s.getNom()==userinput){
+            if(s.getNom().contentEquals(userinput)){
               return s;
             }
           }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Amir.gl99.AppTest" time="0.011" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Amir.gl99.AppTest" time="0.018" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire/surefirebooter9515288152597598910.jar /Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire 2020-05-24T02-59-39_036-jvmRun1 surefire2580415959134815303tmp surefire_08063610514714685414tmp"/>
+    <property name="sun.java.command" value="/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire/surefirebooter13465832062132244800.jar /Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire 2020-05-24T22-40-35_159-jvmRun1 surefire12728531151071441894tmp surefire_016478151324041803691tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/test-classes:/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/classes:/Users/tokarev/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/tokarev/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/tokarev/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire/surefirebooter9515288152597598910.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tokarev/Documents/programmes/progGL/pglp_9.9/gl99/target/surefire/surefirebooter13465832062132244800.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
