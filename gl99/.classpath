@@ -23,6 +23,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="src/main/java/Amir/gl99/lib/derby.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

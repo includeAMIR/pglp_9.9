@@ -8,7 +8,8 @@ import java.sql.SQLException;
 public class App 
 {
     public static void main( String[] args ) throws SQLException, ClassNotFoundException{
-    	DerbyDB db = new DerbyDB();
+    	//DerbyDB db = new DerbyDB();
+
     	Point p = new Point(12,12);
     	Rectangle r = new Rectangle("r",p, 4, 5 );
     	Point p1 = new Point(1,1);
