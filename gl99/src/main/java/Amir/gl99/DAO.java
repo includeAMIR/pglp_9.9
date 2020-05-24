@@ -9,6 +9,7 @@ public abstract class DAO<T> {
 	public abstract T read(String id);
 	public abstract T update(T obj);
 	public abstract void delete(T obj);
+
 	Connection conn;
 	public Connection getConnection() {
 		final String dburl = "jdbc:derby:DBgl99;create=true";
