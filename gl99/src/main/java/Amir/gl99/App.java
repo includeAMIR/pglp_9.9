@@ -27,6 +27,8 @@ public class App
     	DrawingTUI dt = new DrawingTUI();
     	dt.setShapes(shapes.getShapes());
     	dt.nextCommand("Afficher");
+    	DrawingApp app = new DrawingApp();
+    	app.run();
 
     }
 }
