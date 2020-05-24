@@ -7,16 +7,13 @@ public class DerbyDB {
 	public final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
 	  public DerbyDB(){
 		  try {
-			  Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
+			 // Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
 			Connection conn = DriverManager.getConnection(dburl);
 			if(conn != null) {
 				System.out.println("Connecter");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	  }
 }
